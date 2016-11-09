@@ -14,7 +14,7 @@ class EventServiceProvider extends ServiceProvider
      */
     protected $listen = [
         'App\Events\SomeEvent' => [
-            'App\Listeners\EventListener',
+            'App\Listeners\SendConfirmationEmailListener',
         ],
     ];
 
@@ -26,7 +26,5 @@ class EventServiceProvider extends ServiceProvider
     public function boot()
     {
         parent::boot();
-
-        //
     }
 }
